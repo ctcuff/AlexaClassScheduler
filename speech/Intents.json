@@ -1,0 +1,173 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "class scheduler",
+      "intents": [
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "name": "ViewClassesIntent",
+          "slots": [
+            {
+              "name": "day",
+              "type": "AMAZON.DayOfWeek"
+            }
+          ],
+          "samples": [
+            "what are my classes for the day",
+            "what classes do I have today",
+            "what does my schedule look like today",
+            "what does my schedule look like",
+            "tell me what my schedule looks like",
+            "show me my classes for the day",
+            "show me my schedule",
+            "show me my classes",
+            "do i have any classes today"
+          ]
+        },
+        {
+           "name": "ViewTomorrowClasses",
+          "slots": [],
+          "samples": [
+            "what classes do i have tomorrow",
+            "what class do i have tomorrow",
+            "what does my schedule look like for tomorrow",
+            "do i have any classes tomorrow",
+            "show me my classes for tomorrow"
+          ]
+        },
+        {
+          "name": "ViewClassesForDate",
+          "slots": [
+            {
+              "name": "day",
+              "type": "AMAZON.DayOfWeek"
+            }
+          ],
+          "samples": [
+            "what classes do i have on {day}",
+            "what class do i have on {day}",
+            "do i have any classes on {day}",
+            "show me my classes for {day}"
+          ]
+        },
+        {
+          "name": "AddClassIntent",
+          "slots": [
+            {
+              "name": "class",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "add {class} to my classes",
+            "add {class} to my schedule",
+            "add {class}"
+          ]
+        },
+        {
+          "name": "SetStartEndTime",
+          "slots": [
+            {
+              "name": "time",
+              "type": "AMAZON.TIME"
+            }
+          ],
+          "samples": [
+            "{time}"
+          ]
+        },
+        {
+          "name": "SetClassDays",
+          "slots": [
+            {
+              "name": "days",
+              "type": "AMAZON.DayOfWeek"
+            }
+          ],
+          "samples": [
+            "{days}"
+          ]
+        },
+        {
+          "name": "RemoveClassIntent",
+          "slots": [
+            {
+              "name": "classToRemove",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "remove {classToRemove} from my classes",
+            "remove {classToRemove} from my schedule",
+            "remove {classToRemove}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "AMAZON.DayOfWeek",
+          "values": [
+            {
+              "name": {
+                "value": "sundays"
+              }
+            },
+            {
+              "name": {
+                "value": "saturdays"
+              }
+            },
+            {
+              "name": {
+                "value": "fridays"
+              }
+            },
+            {
+              "name": {
+                "value": "thursdays"
+              }
+            },
+            {
+              "name": {
+                "value": "wednesdays"
+              }
+            },
+            {
+              "name": {
+                "value": "tuesdays"
+              }
+            },
+            {
+              "name": {
+                "value": "mondays"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
