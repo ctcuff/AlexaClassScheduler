@@ -12,7 +12,7 @@ Physics    | ["tuesday"]                       | 7:30       | 10:20
 
 # How do I build this myself?
 0. Head over to the [Amazon dev site](https://developer.amazon.com/) and create a developer account if you haven't already done so.
-1. Head over to Amazon's [DynamoDB site](https://aws.amazon.com/dynamodb/), create an account if you haven't already, then create a table similar to the one above (all values are stored as strings, except for days, which is stored as an array of strings).
+1. Head over to Amazon's [DynamoDB site](https://aws.amazon.com/dynamodb/), create an account if you haven't already, then create a table similar to the one above (all values are stored as strings, except for days, which is stored as an list of strings).
 2. Take note of the Access Key and Access Key Secret you hopefullygot from step 1 and create `keys.py` in the `src` directory. It should look **exactly** like this:
 ```python
 # ../src/keys.py
