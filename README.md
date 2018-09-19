@@ -20,8 +20,9 @@ ACCESS_KEY_ID = 'some value here'
 SECRET_ACCESS_KEY = 'some secret value here'
 
 ```
-3. Assuming you know how to upload an Alexa skill, once you've down steps 0 - 2, this should be ready to use. If you're not familiar with uploading an Alexa skill follow [this link](https://developer.amazon.com/alexa-skills-kit/alexa-skill-python-tutorial) for a quick 4. minute tutorial or [this link](https://chatbotsmagazine.com/how-to-develop-an-alexa-skill-in-under-10-minutes-8f288e26ba29) if you're like me and got nowhere fast from the first link.
-4.5 As a bonus, you can run [zip.py](https://github.com/ctcuff/AlexaClassScheduler/blob/master/zip.py) to package the source of the skill into a zip file and upload the resulting zip file into AWS Lambda.
+3. Assuming you know how to upload an Alexa skill, once you've done steps 0 - 2, this should be ready to use. If you're not familiar with uploading an Alexa skill follow [this link](https://developer.amazon.com/alexa-skills-kit/alexa-skill-python-tutorial) for a quick 5 minute tutorial or [this link](https://chatbotsmagazine.com/how-to-develop-an-alexa-skill-in-under-10-minutes-8f288e26ba29) if you're like me and got nowhere fast from the first link.
+
+As a bonus, you can run [zip.py](https://github.com/ctcuff/AlexaClassScheduler/blob/master/zip.py) to package the source of the skill into a zip file and upload the resulting zip file into AWS Lambda.
 
 # Sample conversation
 ### Viewing your schedule
